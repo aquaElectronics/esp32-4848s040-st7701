@@ -48,3 +48,9 @@ All timings and init values were tested on real hardware.
 
 ## Project Layout
 
+src/
+├── main.cpp Demo application
+├── display.h Display class wrapper
+└── display.cpp RGB panel setup and ST7701 init sequence
+platformio.ini
+README.md

@@ -129,7 +129,9 @@ Arduino_ESP32RGBPanel *rgbpanel = new Arduino_ESP32RGBPanel(
     4 /* B0 */, 5 /* B1 */, 6 /* B2 */, 7 /* B3 */, 15 /* B4 */,
     1 /* hsync_polarity */, 10 /* hsync_front_porch */, 8 /* hsync_pulse_width */, 50 /* hsync_back_porch */,
     1 /* vsync_polarity */, 10 /* vsync_front_porch */, 8 /* vsync_pulse_width */, 20 /* vsync_back_porch */,
-    12000  /* PCLK */);
+    1 /* pclk_active_neg */, 16000000 /* prefer_speed */, false /* useBigEndian */, 0 /* de_idle_high */, 
+    0 /* pclk_idle_high */, 4800 /* bounce_buffer_size_px */
+);
 
 Arduino_4848_Display *gfx = new Arduino_4848_Display(
     480 /* width */, 480 /* height */, rgbpanel, 0 /* rotation */, true /* auto_flush */,
